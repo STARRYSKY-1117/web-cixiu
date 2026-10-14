@@ -1,0 +1,226 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.con {
+	width: 1200px;
+	margin: auto;
+}
+
+ul {
+	list-style: none;
+}
+
+.tab_list li {
+	list-style-type: none;
+	border: 1px solid #ccc;
+	height: 40px;
+	width: 158px;
+	background: white;
+	font-size: 20px;
+	font-weight: bold;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 5px 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.tab {
+	width: 1200px;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.tab_list .current {
+	background-image: linear-gradient(skyblue, deepskyblue);
+	color: white;
+}
+
+.item {
+	display: none;
+	clear: both;
+	font-size: 20px;
+	line-height: 35px;
+	text-indent: 2em;
+	border: 1px solid #ccc;
+	height: 300px;
+	background: lavenderblush;
+	padding: 20px;
+}
+
+#div {
+	height: 300px;
+	width: 1200px;
+	background: url(../img/刺绣/苏绣2.jpg);
+	background-size: cover;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.banner-container {
+	width: 1200px;
+	height: 500px;
+	/* 轮播图居中 */
+	margin: 0 auto;
+	/* 隐藏超出展示容器的内容 */
+	overflow: hidden;
+	position: relative;
+}
+
+.banner-container .banner-img-container {
+	width: 6000px;
+	height: 500px;
+	overflow: hidden;
+	position: absolute;
+	/* 开启弹性盒，让图片横向排列 */
+	display: flex;
+	/* animation，@keyframes 搭配使用  run为自定义名称，10s时间*/
+	animation: run 15s ease infinite;
+}
+
+.banner-container .banner-img-container img {
+	width: 1200px;
+	height: 100%;
+}
+
+/* 动画关键帧 */
+/* 以百分比来规定改变发生的时间，或者通过关键词 "from" 和 "to"，等价于 0% 和 100%。0% 是动画的开始时间，100% 动画的结束时间。 */
+@keyframes run {
+
+	0%,
+	10% {
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+
+	20%,
+	30% {
+		/* margin-left: -1200px;; */
+		transform: translateX(-1200px);
+	}
+
+	40%,
+	50% {
+		/* margin-left: -2400px; */
+		transform: translateX(-2400px);
+	}
+
+	60%,
+	70% {
+		/* margin-left: -3600px; */
+		transform: translateX(-3600px);
+	}
+
+	80%,
+	90% {
+		/* margin-left: -4800px; */
+		transform: translateX(-4800px);
+	}
+
+	100% {
+		/* margin-left: 0; */
+		transform: translateX(0);
+	}
+}
+
+#box1 {
+	position: absolute;
+	font-size: 16px;
+	color: pink;
+	pointer-events: none;
+	white-space: nowrap;
+	display: block;
+	padding-left: 8px;
+}
+
+#color {
+	color: black;
+	font-family: "楷体";
+}
+
+#new-color {
+	color: red;
+	font-family: "黑体";
+}
+
+.wenzi {
+	width: 1200px;
+	height: 150px;
+	margin: auto;
+	border: 1px solid #ccc;
+	font-size: 24px;
+	text-indent: 2em;
+	padding: 30px;
+	box-sizing: border-box;
+	background: lavender;
+}
+
+#b1 {
+	float: right;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+
+#b1:hover {
+	opacity: 0.5;
+}
+
+table {
+	width: 1200px;
+	height: 200px;
+	text-align: center;
+	background: cyan;
+	border-collapse: collapse;
+}
+
+table td {
+	border: 1px solid hotpink;
+	padding: 3px 6px;
+	color-interpolation-filters: auto;
+}
+
+table td:hover {
+	opacity: 0.5;
+	background: peachpuff;
+}
+
+.box2 {
+	width: 1200px;
+	height: 150px;
+	background: skyblue;
+	border: 1px solid solid;
+	color: white;
+	font-size: 24px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.c1 {
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+#box3 {
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left: 1050px;
+	top: 60px;
+	margin-right: 20px;
+}
+
+}
+
+body {
+	background: url('../img/刺绣/1.jpg');
+	background-size: cover;
+}
